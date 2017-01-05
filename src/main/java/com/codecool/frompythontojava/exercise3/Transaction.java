@@ -17,6 +17,14 @@ abstract class Transaction {
 
     protected abstract Receipt complete() throws Cancelled;
 
+    public float getAmount() {
+        return amount;
+    }
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +
