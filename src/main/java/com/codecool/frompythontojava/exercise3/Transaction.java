@@ -9,7 +9,7 @@ abstract class Transaction {
     private float amount;
     private Currency currency;
 
-    Transaction(float amount, Currency currency) {
+    public Transaction(float amount, Currency currency) {
         this.id = UUID.randomUUID();
         this.amount = amount;
         this.currency = currency;
